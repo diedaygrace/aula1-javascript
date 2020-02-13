@@ -25,7 +25,19 @@
                     numero: 123
                 }
             };
+
+            function printMessage(n1, n2){
+                console.log("Minha mensagem: ", n1*n2);
+                return n1 * n2;
+            }
+            printMessage(2, 3);
             
+            var print = function (value, printFunction){
+                console.log(printFunction);
+                printFunction(value);
+            }
+            print("Alohomora", printMessage);
+
             console.log("numerooooo: "+ number);
             console.log("array 1: ", array);
             console.log("array 2: ", array2);
